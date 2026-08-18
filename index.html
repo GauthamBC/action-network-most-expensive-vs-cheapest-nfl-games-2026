@@ -258,7 +258,7 @@ to{opacity:1;transform:none;}
 .method-block{margin-top:26px;padding-top:24px;border-top:1px solid var(--line);}
 .method-block:first-of-type{margin-top:12px;}
 .method-block h4{margin:0 0 15px;font-family:var(--display);font-size:24px;font-weight:750;line-height:1.15;color:var(--navy);}
-.method-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 18px;}
+.method-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 18px;}
 .method-fact{min-height:116px;padding:15px 16px;border:1px solid var(--line);border-top:4px solid var(--green);background:var(--wash);}
 .method-fact span{display:block;margin-bottom:7px;font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);}
 .method-fact b{display:block;font-family:var(--display);font-size:22px;font-weight:760;line-height:1.08;color:var(--navy);}
@@ -273,6 +273,7 @@ to{opacity:1;transform:none;}
 .cpi-grid small{display:block;margin-top:5px;font-size:12px;line-height:1.3;color:var(--muted);}
 .method-footnote{margin:10px 0 0;font-size:16px!important;color:var(--muted);}
 @media(max-width:900px){.method-package{grid-template-columns:repeat(3,minmax(0,1fr));}.method-facts{grid-template-columns:1fr 1fr;}.cpi-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:640px){.method-facts{grid-template-columns:1fr;}}
 .method .sources a{font-weight:600;}
 .section-actions{margin:18px 0 18px;padding:14px 16px;border:1px solid var(--line);background:#fff;}
 .section-actions-note{display:flex;flex-direction:column;gap:2px;min-width:0;}
@@ -1650,22 +1651,27 @@ body{margin:0!important;}
     <div class="method-fact"><span>Ticket Sample</span><b>539,192 listings</b><small>Across all 32 NFL teams and 272 Ticketmaster event pages.</small></div>
     <div class="method-fact"><span>Collection Window</span><b>July 27–August 2, 2026</b><small>Ticket listings were captured during this seven-day research period.</small></div>
     <div class="method-fact"><span>Ticket Types</span><b>Primary + Verified Resale</b><small>Both listing types were included in the Ticketmaster sample.</small></div>
+    <div class="method-fact"><span>Market Comparison</span><b>StubHub + SeatGeek</b><small>Comparison only to sense-check the Ticketmaster sample. Not included in the final rankings.</small></div>
   </div>
-  <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used as secondary comparison points to sense-check Ticketmaster pricing against the wider resale market, but their listings were <strong>not included in the final ranking calculations</strong>.</p>
+  <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used only as secondary comparison points to help confirm that the Ticketmaster sample was broadly representative of the wider resale market.</p>
   <p class="method-copy">Ultra-premium and luxury packages, along with unusually low promotional listings, were removed to better reflect regular-season ticket prices a family could realistically encounter.</p>
 </div>
 
 <div class="method-block">
   <h4>Food, Drink and Parking</h4>
   <p class="method-copy">Where official 2026 stadium concession and parking prices were not yet available, 2025 prices from Fox 5, Dose and Team Marketing Report's Fan Cost Index were used as the baseline.</p>
-  <div class="method-note"><b>Inflation adjustment — U.S. Bureau of Labor Statistics CPI data:</b> 2025 concession and parking prices were adjusted to estimated 2026 levels using the latest available 12-month Consumer Price Index changes published by the U.S. Bureau of Labor Statistics, through June 2026.</div>
+  <div class="method-facts">
+    <div class="method-fact"><span>Inflation Source</span><b>U.S. Bureau of Labor Statistics CPI</b><small>Latest available 12-month Consumer Price Index changes, through June 2026.</small></div>
+    <div class="method-fact"><span>Applied To</span><b>Beer, Soft Drinks, Hot Dogs + Parking</b><small>BLS CPI data was used to estimate 2026 costs for these items where official 2026 prices were not yet available.</small></div>
+  </div>
+  <div class="method-note"><b>Inflation adjustment — how it was used:</b> 2025 prices for beers, soft drinks, hot dogs and parking were adjusted to estimated 2026 levels using category-specific Consumer Price Index changes published by the U.S. Bureau of Labor Statistics.</div>
   <ul class="cpi-grid" aria-label="CPI adjustments by category">
     <li><b>+3.1%</b><span>Beer</span><small>Beer, ale and other malt beverages away from home</small></li>
     <li><b>+1.9%</b><span>Soft Drinks</span><small>Carbonated drinks</small></li>
     <li><b>+7.2%</b><span>Hot Dogs</span><small>Frankfurters</small></li>
     <li><b>+3.8%</b><span>Parking</span><small>Parking fees and tolls</small></li>
   </ul>
-  <p class="method-footnote">CPI adjustments were applied only to concession and parking costs. 2026 ticket prices came directly from ticket listings and were not inflation-adjusted.</p>
+  <p class="method-footnote">CPI adjustments were applied only to beer, soft drinks, hot dogs and parking costs. 2026 ticket prices came directly from ticket listings and were not inflation-adjusted.</p>
 </div>
 
 <div class="method-block">
