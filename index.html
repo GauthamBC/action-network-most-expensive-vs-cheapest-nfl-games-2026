@@ -269,7 +269,7 @@ to{opacity:1;transform:none;}
 .method-copy{margin:12px 0 0;}
 .method-note{margin:16px 0 0;padding:15px 17px;border-left:5px solid var(--green);background:var(--soft);}
 .method-note b{font-family:var(--display);font-weight:750;color:var(--navy);}
-.cpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:16px 0 12px!important;padding:0!important;list-style:none!important;}
+.cpi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 12px!important;padding:0!important;list-style:none!important;}
 .cpi-grid li{margin:0!important;padding:13px 12px!important;border:1px solid var(--line);background:#fff;}
 .cpi-grid b{display:block;font-family:var(--display);font-size:20px;font-weight:760;line-height:1.05;color:var(--dark);}
 .cpi-grid span{display:block;margin-top:5px;font-family:var(--display);font-size:13px;font-weight:650;text-transform:uppercase;letter-spacing:.035em;color:var(--navy);}
@@ -1657,25 +1657,32 @@ body{margin:0!important;}
     <div class="method-fact"><span>Ticket Types</span><b>Primary + Verified Resale</b><small>Both listing types were included in the Ticketmaster sample.</small></div>
     <div class="method-fact"><span>Market Comparison</span><b>StubHub + SeatGeek</b><small>Comparison only to sense-check the Ticketmaster sample. Not included in the final rankings.</small></div>
   </div>
-  <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used only as secondary comparison points to help confirm that the Ticketmaster sample was broadly representative of the wider resale market.</p>
+  <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used only as secondary comparison points to help confirm that the Ticketmaster sample was broadly representative of the wider ticket market.</p>
   <p class="method-copy">Ultra-premium and luxury packages, along with unusually low promotional listings, were removed to better reflect regular-season ticket prices a family could realistically encounter.</p>
 </div>
 
 <div class="method-block">
-  <h4>Food, Drink and Parking</h4>
-  <p class="method-copy">Since official 2026 concession and parking prices were not available for all teams, 2025 figures were used consistently across the league as the baseline and adjusted using U.S. Bureau of Labor Statistics CPI data to estimate 2026 costs.</p>
+  <h4>Food and Drink</h4>
+  <p class="method-copy">Since official 2026 concession prices were not available consistently across all teams, 2025 figures were used as the baseline and adjusted using U.S. Bureau of Labor Statistics CPI data to estimate 2026 costs.</p>
   <div class="method-facts">
     <div class="method-fact"><span>Inflation Source</span><b>U.S. Bureau of Labor Statistics CPI</b><small>Latest available 12-month Consumer Price Index changes, through June 2026.</small></div>
-    <div class="method-fact"><span>Applied To</span><b>Beer, Soft Drinks, Hot Dogs + Parking</b><small>BLS CPI data was used to estimate 2026 costs for these items where official 2026 prices were not yet available.</small></div>
+    <div class="method-fact"><span>Applied To</span><b>Beer, Soft Drinks + Hot Dogs</b><small>Category-specific CPI changes were used to estimate 2026 concession costs.</small></div>
   </div>
-  <div class="method-note"><b>Inflation adjustment — how it was used:</b> 2025 prices for beers, soft drinks, hot dogs and parking were adjusted to estimated 2026 levels using category-specific Consumer Price Index changes published by the U.S. Bureau of Labor Statistics.</div>
   <ul class="cpi-grid" aria-label="CPI adjustments by category">
     <li><b>+3.1%</b><span>Beer</span><small>Beer, ale and other malt beverages away from home</small></li>
     <li><b>+1.9%</b><span>Soft Drinks</span><small>Carbonated drinks</small></li>
     <li><b>+7.2%</b><span>Hot Dogs</span><small>Frankfurters</small></li>
-    <li><b>+3.8%</b><span>Parking</span><small>Parking fees and tolls</small></li>
   </ul>
-  <p class="method-footnote">CPI adjustments were applied only to beer, soft drinks, hot dogs and parking costs. 2026 ticket prices came directly from ticket listings and were not inflation-adjusted.</p>
+  <p class="method-footnote">CPI adjustments were applied only to beer, soft drink and hot dog costs. 2026 ticket and parking prices were not inflation-adjusted.</p>
+</div>
+
+<div class="method-block">
+  <h4>Parking</h4>
+  <div class="method-facts">
+    <div class="method-fact"><span>Parking Source</span><b>Vivid Seats</b><small>Parking listings were collected across each team’s 2026 regular-season home games.</small></div>
+    <div class="method-fact"><span>Games Included</span><b>Regular Season Only</b><small>Preseason games were excluded from the parking analysis.</small></div>
+  </div>
+  <p class="method-copy">Available parking listings were analysed for each regular-season home game. Atypical premium listings and extreme outliers were excluded before averaging across the home schedule to estimate a representative parking cost for each team.</p>
 </div>
 
 <div class="method-block">
@@ -1684,7 +1691,7 @@ body{margin:0!important;}
 </div>
 
 <p>You can view the complete dataset used for this analysis here: <a href="https://gauthambc.github.io/action-network-most-expensive-vs-cheapest-nfl-games-2026/rawdata.html" target="_blank" rel="nofollow noopener">NFL Stadium Costs for Families 2026 | Action Network</a>.</p>
-<p class="sources"><strong>Sources:</strong> Action Network data analysis; <a href="https://www.ticketmaster.com/" target="_blank" rel="nofollow noopener">Ticketmaster</a>; <a href="https://www.stubhub.com/" target="_blank" rel="nofollow noopener">StubHub</a> and <a href="https://seatgeek.com/" target="_blank" rel="nofollow noopener">SeatGeek</a> (comparison only); <a href="https://www.fox5ny.com/news/beer-prices-every-nfl-stadium-heres-how-metlife-stadium-field-ranks" target="_blank" rel="nofollow noopener">Fox 5</a>; <a href="https://dose.ca/2025/09/11/here-are-the-price-rankings-for-hot-dogs-in-nfl-stadiums/" target="_blank" rel="nofollow noopener">Dose</a>; <a href="https://www.teammarketing.com/" target="_blank" rel="nofollow noopener">Team Marketing Report's Fan Cost Index</a>; and the <a href="https://www.bls.gov/cpi/" target="_blank" rel="nofollow noopener">U.S. Bureau of Labor Statistics (CPI data)</a>.</p>
+<p class="sources"><strong>Sources:</strong> Action Network data analysis; <a href="https://www.ticketmaster.com/" target="_blank" rel="nofollow noopener">Ticketmaster</a>; <a href="https://www.stubhub.com/" target="_blank" rel="nofollow noopener">StubHub</a> and <a href="https://seatgeek.com/" target="_blank" rel="nofollow noopener">SeatGeek</a> (comparison only); <a href="https://www.vividseats.com/" target="_blank" rel="nofollow noopener">Vivid Seats</a> (parking); <a href="https://www.fox5ny.com/news/beer-prices-every-nfl-stadium-heres-how-metlife-stadium-field-ranks" target="_blank" rel="nofollow noopener">Fox 5</a>; <a href="https://dose.ca/2025/09/11/here-are-the-price-rankings-for-hot-dogs-in-nfl-stadiums/" target="_blank" rel="nofollow noopener">Dose</a>; <a href="https://www.teammarketing.com/" target="_blank" rel="nofollow noopener">Team Marketing Report's Fan Cost Index</a>; and the <a href="https://www.bls.gov/cpi/" target="_blank" rel="nofollow noopener">U.S. Bureau of Labor Statistics (CPI data)</a>.</p>
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
