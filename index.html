@@ -250,6 +250,29 @@ to{opacity:1;transform:none;}
 .method p,.method li{font-size:19px;line-height:1.68;}
 .method ul{margin:13px 0 18px;padding-left:23px;}
 .method .sources{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;color:var(--muted);}
+.method-intro{max-width:940px;margin:12px 0 20px;}
+.method-package{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:20px 0 30px;background:var(--line);border:1px solid var(--line);}
+.method-package-item{display:flex;flex-direction:column;justify-content:center;min-height:94px;padding:14px 12px;background:#fff;text-align:center;}
+.method-package-item b{font-family:var(--display);font-size:25px;font-weight:750;line-height:1;color:var(--dark);}
+.method-package-item span{margin-top:7px;font-family:var(--display);font-size:14px;font-weight:650;line-height:1.2;text-transform:uppercase;letter-spacing:.045em;color:var(--navy);}
+.method-block{margin-top:26px;padding-top:24px;border-top:1px solid var(--line);}
+.method-block:first-of-type{margin-top:12px;}
+.method-block h4{margin:0 0 15px;font-family:var(--display);font-size:24px;font-weight:750;line-height:1.15;color:var(--navy);}
+.method-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 18px;}
+.method-fact{min-height:116px;padding:15px 16px;border:1px solid var(--line);border-top:4px solid var(--green);background:var(--wash);}
+.method-fact span{display:block;margin-bottom:7px;font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);}
+.method-fact b{display:block;font-family:var(--display);font-size:22px;font-weight:760;line-height:1.08;color:var(--navy);}
+.method-fact small{display:block;margin-top:7px;font-size:14px;line-height:1.38;color:var(--muted);}
+.method-copy{margin:12px 0 0;}
+.method-note{margin:16px 0 0;padding:15px 17px;border-left:5px solid var(--green);background:var(--soft);}
+.method-note b{font-family:var(--display);font-weight:750;color:var(--navy);}
+.cpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:16px 0 12px!important;padding:0!important;list-style:none!important;}
+.cpi-grid li{margin:0!important;padding:13px 12px!important;border:1px solid var(--line);background:#fff;}
+.cpi-grid b{display:block;font-family:var(--display);font-size:20px;font-weight:760;line-height:1.05;color:var(--dark);}
+.cpi-grid span{display:block;margin-top:5px;font-family:var(--display);font-size:13px;font-weight:650;text-transform:uppercase;letter-spacing:.035em;color:var(--navy);}
+.cpi-grid small{display:block;margin-top:5px;font-size:12px;line-height:1.3;color:var(--muted);}
+.method-footnote{margin:10px 0 0;font-size:16px!important;color:var(--muted);}
+@media(max-width:900px){.method-package{grid-template-columns:repeat(3,minmax(0,1fr));}.method-facts{grid-template-columns:1fr 1fr;}.cpi-grid{grid-template-columns:1fr 1fr;}}
 .method .sources a{font-weight:600;}
 .section-actions{margin:18px 0 18px;padding:14px 16px;border:1px solid var(--line);background:#fff;}
 .section-actions-note{display:flex;flex-direction:column;gap:2px;min-width:0;}
@@ -1610,7 +1633,49 @@ body{margin:0!important;}
 
 <section class="section" id="methodology"><div class="wrap">
 <div class="eyebrow">How the Ranking Works</div><h2>Methodology and <em>Sources</em></h2>
-<div class="method reveal"><h3>Total Cost for a Family of Four</h3><p>All prices are based on publicly available team and ticketing data and adjusted to reflect the 2026 NFL season. To calculate the cost for a family of four, we included:</p><ul><li>Four general admission tickets (including both primary and verified resale listings)</li><li>Two beers</li><li>Two soft drinks</li><li>Four hot dogs</li><li>One parking spot</li></ul><p>In total, Action Network’s data experts analyzed <strong>539,192 ticket listings</strong> across all 32 NFL teams, drawn from <strong>272 Ticketmaster event pages</strong>. The ticket sample included both primary-market tickets and verified resale listings. Ticketmaster was the primary ticketing source, supplemented where applicable by major secondary-market platforms including StubHub and SeatGeek, as well as official team ticketing outlets. Ticket data was collected between <strong>July 27 and August 9, 2026</strong>. We filtered out atypical listings, removing ultra-premium or luxury packages as well as unusually low promotional offers, to ensure prices reflected what a family would realistically pay at the higher end for a regular-season stadium visit.</p><p>Where official 2026 stadium concession and parking prices were not yet available, 2025 prices from Fox 5, Dose and Team Marketing Report's Fan Cost Index were used as the baseline. These 2025 prices were adjusted to estimated 2026 levels using the latest available 12-month Consumer Price Index (CPI) changes published by the U.S. Bureau of Labor Statistics, through June 2026. Category-specific CPI measures were used rather than a single overall inflation rate:</p><ul><li>Beer: +3.1% (beer, ale and other malt beverages away from home)</li><li>Soft drinks: +1.9% (carbonated drinks)</li><li>Hot dogs: +7.2% (frankfurters)</li><li>Parking: +3.8% (parking fees and tolls)</li></ul><p>These CPI adjustments are used only to estimate 2026 concession and parking costs. Ticket prices are based on 2026-season listings and are not CPI-adjusted.</p><p>The cheapest ranking orders teams from the lowest total to the highest, and the most expensive ranking reverses that order. The Jets and Giants, and the Rams and Chargers, remain separate because their ticket costs differ even though each pair shares a stadium. Child admission policies are shown as supporting information and do not alter the package total.</p><p>You can view the complete dataset used for this analysis here: <a href="https://gauthambc.github.io/action-network-most-expensive-vs-cheapest-nfl-games-2026/rawdata.html" target="_blank" rel="nofollow noopener">NFL Stadium Costs for Families 2026 | Action Network</a>.</p><p class="sources"><strong>Sources:</strong> Action Network data analysis; <a href="https://www.ticketmaster.com/" target="_blank" rel="nofollow noopener">Ticketmaster</a>; <a href="https://www.stubhub.com/" target="_blank" rel="nofollow noopener">StubHub</a>; <a href="https://seatgeek.com/" target="_blank" rel="nofollow noopener">SeatGeek</a>; <a href="https://www.nfl.com/teams/" target="_blank" rel="nofollow noopener">official NFL team websites</a>; <a href="https://www.fox5ny.com/news/beer-prices-every-nfl-stadium-heres-how-metlife-stadium-field-ranks" target="_blank" rel="nofollow noopener">Fox 5</a>; <a href="https://dose.ca/2025/09/11/here-are-the-price-rankings-for-hot-dogs-in-nfl-stadiums/" target="_blank" rel="nofollow noopener">Dose</a>; <a href="https://www.teammarketing.com/" target="_blank" rel="nofollow noopener">Team Marketing Report's Fan Cost Index</a>; and the <a href="https://www.bls.gov/cpi/" target="_blank" rel="nofollow noopener">U.S. Bureau of Labor Statistics</a>.</p></div>
+<div class="method reveal">
+<h3>Total Cost for a Family of Four</h3>
+<p class="method-intro">The ranking estimates what a family of four would pay for a regular-season NFL game in 2026. Each total includes:</p>
+<div class="method-package" aria-label="Family of four cost components">
+  <div class="method-package-item"><b>4</b><span>General Admission Tickets</span></div>
+  <div class="method-package-item"><b>2</b><span>Beers</span></div>
+  <div class="method-package-item"><b>2</b><span>Soft Drinks</span></div>
+  <div class="method-package-item"><b>4</b><span>Hot Dogs</span></div>
+  <div class="method-package-item"><b>1</b><span>Parking Spot</span></div>
+</div>
+
+<div class="method-block">
+  <h4>Ticket Pricing</h4>
+  <div class="method-facts">
+    <div class="method-fact"><span>Ticket Sample</span><b>539,192 listings</b><small>Across all 32 NFL teams and 272 Ticketmaster event pages.</small></div>
+    <div class="method-fact"><span>Collection Window</span><b>July 27–August 2, 2026</b><small>Ticket listings were captured during this seven-day research period.</small></div>
+    <div class="method-fact"><span>Ticket Types</span><b>Primary + Verified Resale</b><small>Both listing types were included in the Ticketmaster sample.</small></div>
+  </div>
+  <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used as secondary comparison points to sense-check Ticketmaster pricing against the wider resale market, but their listings were <strong>not included in the final ranking calculations</strong>.</p>
+  <p class="method-copy">Ultra-premium and luxury packages, along with unusually low promotional listings, were removed to better reflect regular-season ticket prices a family could realistically encounter.</p>
+</div>
+
+<div class="method-block">
+  <h4>Food, Drink and Parking</h4>
+  <p class="method-copy">Where official 2026 stadium concession and parking prices were not yet available, 2025 prices from Fox 5, Dose and Team Marketing Report's Fan Cost Index were used as the baseline.</p>
+  <div class="method-note"><b>Inflation adjustment — U.S. Bureau of Labor Statistics CPI data:</b> 2025 concession and parking prices were adjusted to estimated 2026 levels using the latest available 12-month Consumer Price Index changes published by the U.S. Bureau of Labor Statistics, through June 2026.</div>
+  <ul class="cpi-grid" aria-label="CPI adjustments by category">
+    <li><b>+3.1%</b><span>Beer</span><small>Beer, ale and other malt beverages away from home</small></li>
+    <li><b>+1.9%</b><span>Soft Drinks</span><small>Carbonated drinks</small></li>
+    <li><b>+7.2%</b><span>Hot Dogs</span><small>Frankfurters</small></li>
+    <li><b>+3.8%</b><span>Parking</span><small>Parking fees and tolls</small></li>
+  </ul>
+  <p class="method-footnote">CPI adjustments were applied only to concession and parking costs. 2026 ticket prices came directly from ticket listings and were not inflation-adjusted.</p>
+</div>
+
+<div class="method-block">
+  <h4>Ranking Notes</h4>
+  <p class="method-copy">The cheapest ranking orders teams from the lowest total to the highest, while the most expensive ranking reverses that order. The Jets and Giants, and the Rams and Chargers, remain separate because their ticket costs differ even though each pair shares a stadium. Child admission policies are shown as supporting information and do not alter the package total.</p>
+</div>
+
+<p>You can view the complete dataset used for this analysis here: <a href="https://gauthambc.github.io/action-network-most-expensive-vs-cheapest-nfl-games-2026/rawdata.html" target="_blank" rel="nofollow noopener">NFL Stadium Costs for Families 2026 | Action Network</a>.</p>
+<p class="sources"><strong>Sources:</strong> Action Network data analysis; <a href="https://www.ticketmaster.com/" target="_blank" rel="nofollow noopener">Ticketmaster</a>; <a href="https://www.stubhub.com/" target="_blank" rel="nofollow noopener">StubHub</a> and <a href="https://seatgeek.com/" target="_blank" rel="nofollow noopener">SeatGeek</a> (comparison only); <a href="https://www.fox5ny.com/news/beer-prices-every-nfl-stadium-heres-how-metlife-stadium-field-ranks" target="_blank" rel="nofollow noopener">Fox 5</a>; <a href="https://dose.ca/2025/09/11/here-are-the-price-rankings-for-hot-dogs-in-nfl-stadiums/" target="_blank" rel="nofollow noopener">Dose</a>; <a href="https://www.teammarketing.com/" target="_blank" rel="nofollow noopener">Team Marketing Report's Fan Cost Index</a>; and the <a href="https://www.bls.gov/cpi/" target="_blank" rel="nofollow noopener">U.S. Bureau of Labor Statistics (CPI data)</a>.</p>
+</div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
 </main>
