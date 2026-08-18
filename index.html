@@ -251,10 +251,13 @@ to{opacity:1;transform:none;}
 .method ul{margin:13px 0 18px;padding-left:23px;}
 .method .sources{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;color:var(--muted);}
 .method-intro{max-width:940px;margin:12px 0 20px;}
-.method-package{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:20px 0 30px;background:var(--line);border:1px solid var(--line);}
+.method-package{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin:20px 0 30px;background:var(--line);border:1px solid var(--line);}
 .method-package-item{display:flex;flex-direction:column;justify-content:center;min-height:94px;padding:14px 12px;background:#fff;text-align:center;}
 .method-package-item b{font-family:var(--display);font-size:25px;font-weight:750;line-height:1;color:var(--dark);}
 .method-package-item span{margin-top:7px;font-family:var(--display);font-size:14px;font-weight:650;line-height:1.2;text-transform:uppercase;letter-spacing:.045em;color:var(--navy);}
+.method-package-item small{display:block;margin-top:5px;font-size:12px;line-height:1.25;color:var(--muted);}
+.method-package-item.supporting{background:var(--wash);}
+.method-package-item.supporting b{font-size:19px;color:var(--dark);}
 .method-block{margin-top:26px;padding-top:24px;border-top:1px solid var(--line);}
 .method-block:first-of-type{margin-top:12px;}
 .method-block h4{margin:0 0 15px;font-family:var(--display);font-size:24px;font-weight:750;line-height:1.15;color:var(--navy);}
@@ -1636,13 +1639,14 @@ body{margin:0!important;}
 <div class="eyebrow">How the Ranking Works</div><h2>Methodology and <em>Sources</em></h2>
 <div class="method reveal">
 <h3>Total Cost for a Family of Four</h3>
-<p class="method-intro">The ranking estimates what a family of four would pay for a regular-season NFL game in 2026. Each total includes:</p>
-<div class="method-package" aria-label="Family of four cost components">
+<p class="method-intro">The ranking estimates what a family of four would pay for a regular-season NFL game in 2026. Each total includes five cost components, with child admission shown separately as supporting data.</p>
+<div class="method-package" aria-label="Family of four cost components and supporting child admission data">
   <div class="method-package-item"><b>4</b><span>General Admission Tickets</span></div>
   <div class="method-package-item"><b>2</b><span>Beers</span></div>
   <div class="method-package-item"><b>2</b><span>Soft Drinks</span></div>
   <div class="method-package-item"><b>4</b><span>Hot Dogs</span></div>
   <div class="method-package-item"><b>1</b><span>Parking Spot</span></div>
+  <div class="method-package-item supporting"><b>Supporting Data</b><span>Child Admission</span><small>Not included in ranking</small></div>
 </div>
 
 <div class="method-block">
