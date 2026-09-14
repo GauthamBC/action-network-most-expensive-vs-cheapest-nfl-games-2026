@@ -2177,6 +2177,40 @@ body{margin:0!important;}
 }
 </style>
 
+
+<style id="mobile-left-align-stats-sections">
+@media (max-width:900px){
+  /* Study scope: keep the mobile layout, but align all content to the left. */
+  .research-stat{
+    align-items:flex-start!important;
+    justify-content:center!important;
+    text-align:left!important;
+  }
+  .research-stat b,
+  .research-stat span{
+    width:100%!important;
+    text-align:left!important;
+  }
+
+  /* Section menu cards: left-align their labels on mobile. */
+  #main-menu .nav-track>button{
+    justify-content:flex-start!important;
+    text-align:left!important;
+  }
+}
+
+@media (max-width:520px){
+  .research-stat{
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+  #main-menu .nav-track>button{
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <main class="page">
