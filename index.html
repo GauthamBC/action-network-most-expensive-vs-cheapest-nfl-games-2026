@@ -1531,6 +1531,219 @@ body{margin:0!important;}
 }
 </style>
 
+<style id="mobile-responsive-fix">
+/* Mobile/tablet responsive repair. Desktop styles above remain unchanged. */
+@media (max-width: 900px){
+  html,body{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:hidden!important;}
+  body{font-size:17px!important;}
+  .page{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:hidden!important;}
+  .wrap{width:100%!important;max-width:100%!important;padding-left:16px!important;padding-right:16px!important;}
+  .hero{padding:28px 0 34px!important;}
+  .mast{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:12px!important;margin-bottom:18px!important;}
+  .hero .logo{width:min(218px,72vw)!important;max-width:100%!important;height:auto!important;}
+  .kicker{max-width:none!important;text-align:left!important;font-size:13px!important;}
+  .dek{font-size:18px!important;line-height:1.55!important;margin-top:16px!important;}
+  .research-strip{grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:22px!important;}
+  .research-stat{min-height:112px!important;padding:15px 8px!important;}
+  .research-stat b{font-size:clamp(25px,7vw,34px)!important;}
+  .research-stat span{font-size:11px!important;line-height:1.25!important;letter-spacing:.04em!important;}
+  .hero-board{margin-top:24px!important;}
+  .cost-track{padding:20px 16px!important;}
+  .track-head{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;margin-bottom:14px!important;}
+  .track-head .track-gap-title,.track-head .track-gap-side{grid-column:auto!important;justify-self:auto!important;text-align:left!important;}
+  .track{display:none!important;}
+  .track-labels{position:static!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;height:auto!important;margin:0!important;}
+  .track-label{position:static!important;transform:none!important;align-items:flex-start!important;white-space:normal!important;padding:11px 12px!important;border:1px solid rgba(255,255,255,.15)!important;background:rgba(255,255,255,.045)!important;}
+  .track-label.edge-left,.track-label.edge-right{transform:none!important;align-items:flex-start!important;}
+  .track-label.avg{border-color:rgba(0,224,154,.38)!important;background:rgba(0,224,154,.08)!important;}
+  .track-label b,.track-label strong{font-size:19px!important;}
+  .track-label span{font-size:11px!important;}
+  .byline{font-size:13px!important;line-height:1.4!important;}
+
+  .nav{position:static!important;width:100%!important;overflow:hidden!important;}
+  .nav-scroll-shell{width:100%!important;padding:8px 16px 10px!important;}
+  .nav-scroll-top{display:flex!important;}
+  .nav-track{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;width:100%!important;max-width:100%!important;overflow:visible!important;padding:4px 0!important;}
+  .nav-track>button{min-width:0!important;min-height:44px!important;padding:9px 8px!important;white-space:normal!important;text-align:center!important;font-size:13px!important;line-height:1.15!important;border:1px solid var(--line)!important;}
+  .nav-scroll-controls{display:none!important;}
+
+  .section{padding:34px 0 12px!important;}
+  .section h2{font-size:clamp(31px,8.6vw,44px)!important;line-height:1.02!important;white-space:normal!important;overflow-wrap:normal!important;}
+  .eyebrow{font-size:13px!important;}
+  .lede{font-size:17px!important;line-height:1.6!important;margin-top:13px!important;max-width:none!important;}
+  .findings{grid-template-columns:1fr!important;gap:12px!important;}
+  .finding,.finding.featured{display:block!important;padding:18px 16px!important;}
+  .finding-num{font-size:clamp(30px,9vw,42px)!important;margin-bottom:10px!important;}
+  .finding h3{font-size:24px!important;}
+  .finding p{font-size:16px!important;line-height:1.55!important;}
+
+  .section-actions{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;}
+  .section-actions-note{max-width:none!important;}
+  .download.download-inline{width:100%!important;justify-content:center!important;}
+
+  /* Detailed 16-team cheapest/expensive infographics become readable cards. */
+  #cheap-rank-shell,#exp-rank-shell{width:100%!important;max-width:100%!important;min-width:0!important;margin-left:0!important;margin-right:0!important;overflow:hidden!important;}
+  #cheap-expanded-view,#exp-expanded-view{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important;margin:0!important;padding:0!important;}
+  #cheap-expanded-grid,#exp-expanded-grid{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important;padding:0 0 12px!important;}
+  #cheap-expanded-grid .a11y-data-table-scroll,#exp-expanded-grid .a11y-data-table-scroll,
+  #cheap-expanded-grid .a11y-data-table,#exp-expanded-grid .a11y-data-table{width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important;}
+  .table-scroll-assist{display:none!important;}
+  .cheap-night-decor{opacity:.32!important;}
+  .cheap-infographic-brand{padding:18px 16px 7px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;}
+  .cheap-infographic-brand .logo{width:170px!important;max-width:55vw!important;}
+  .cheap-infographic-brand-note{display:none!important;}
+  #cheap-expanded-grid .cheap-expanded-title,#exp-expanded-grid .cheap-expanded-title{padding:7px 16px 18px!important;text-align:left!important;}
+  #cheap-expanded-grid .cheap-expanded-title strong,#exp-expanded-grid .cheap-expanded-title strong{font-size:clamp(29px,8vw,39px)!important;line-height:.98!important;white-space:normal!important;}
+  .cheap-expanded-title span{font-size:11px!important;}
+  .cheap-control-bar,#exp-expanded-grid .cheap-control-bar{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;padding:12px 12px 14px!important;}
+  .cheap-sort-controls,#exp-expanded-grid .exp-sort-controls{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;width:100%!important;}
+  .cheap-sort-controls>span,#exp-expanded-grid .exp-sort-controls>span{grid-column:1/-1!important;margin:0!important;}
+  .cheap-custom-select,.cheap-custom-select.metric,.cheap-custom-select.direction{width:100%!important;min-width:0!important;}
+  .cheap-select-trigger{height:42px!important;font-size:13px!important;}
+  .cheap-average-summary{width:100%!important;max-width:100%!important;margin:0!important;justify-content:center!important;white-space:normal!important;text-align:center!important;}
+  .cheap-expanded-head{display:none!important;}
+  .cheap-expanded-row{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;width:auto!important;min-width:0!important;min-height:0!important;margin:10px 9px 0!important;padding:0!important;border:1px solid rgba(0,224,154,.30)!important;border-left:4px solid #16f0ad!important;background:rgba(2,35,27,.76)!important;opacity:1!important;transform:none!important;}
+  .cheap-expanded-row>div{display:flex!important;min-width:0!important;min-height:68px!important;padding:10px 9px!important;border-right:1px solid rgba(0,224,154,.18)!important;border-bottom:1px solid rgba(0,224,154,.18)!important;background:transparent!important;box-sizing:border-box!important;}
+  .cheap-expanded-row>div:nth-child(even){border-right:0!important;}
+  .cheap-team-cell{grid-column:1/-1!important;display:grid!important;grid-template-columns:36px minmax(0,1fr)!important;gap:9px!important;align-items:center!important;min-height:70px!important;border-right:0!important;}
+  .cheap-team-cell:after{content:none!important;display:none!important;}
+  .cheap-expanded-rank{width:34px!important;height:34px!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:20px!important;color:#16f0ad!important;}
+  .cheap-expanded-team b{font-size:16px!important;line-height:1.15!important;white-space:normal!important;overflow:visible!important;}
+  .cheap-expanded-team small{font-size:12px!important;line-height:1.25!important;white-space:normal!important;overflow:visible!important;color:rgba(255,255,255,.75)!important;}
+  .cheap-total-cell{grid-column:1/-1!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:10px!important;min-height:62px!important;border-right:0!important;}
+  .cheap-total-cell:before{content:"Overall Cost";font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#16f0ad;}
+  .cheap-total-cell .cheap-count{font-size:21px!important;white-space:nowrap!important;}
+  .cheap-total-delta{font-size:10.5px!important;text-align:right!important;}
+  .cheap-metric-cell{width:auto!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;text-align:left!important;}
+  .cheap-metric-cell:before{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.045em;text-transform:uppercase;color:rgba(255,255,255,.70);line-height:1.15;}
+  .cheap-expanded-row>div:nth-child(3):before{content:"Four Tickets";}
+  .cheap-expanded-row>div:nth-child(4):before{content:"Two Beers";}
+  .cheap-expanded-row>div:nth-child(5):before{content:"Two Soft Drinks";}
+  .cheap-expanded-row>div:nth-child(6):before{content:"Four Hot Dogs";}
+  .cheap-expanded-row>div:nth-child(7):before{content:"Parking";}
+  .cheap-metric-cell svg{width:17px!important;height:17px!important;position:absolute!important;opacity:0!important;pointer-events:none!important;}
+  .cheap-metric-cell b{font-size:17px!important;line-height:1.1!important;color:#fff!important;white-space:nowrap!important;}
+  .cheap-policy-cell{grid-column:1/-1!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;min-height:54px!important;border-right:0!important;border-bottom:0!important;font-size:12px!important;text-align:left!important;}
+  .cheap-policy-cell:before{content:"Child Policy";font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.70);margin-right:auto;}
+  .cheap-policy-cell svg{width:17px!important;height:17px!important;}
+  .cheap-infographic-footer{padding:14px 12px!important;font-size:11px!important;line-height:1.45!important;}
+
+  /* Category leaders */
+  .category-tabs{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;overflow:visible!important;}
+  .category-tabs button{width:100%!important;min-width:0!important;padding:10px 8px!important;font-size:13px!important;}
+  .category-panel-toolbar{padding:12px 12px 0!important;}
+  .category-mode-toggle{width:100%!important;display:grid!important;grid-template-columns:1fr 1fr!important;}
+  .category-mode-toggle button{padding:10px 7px!important;font-size:13px!important;}
+  .category-hero{display:grid!important;grid-template-columns:1fr!important;gap:14px!important;padding:20px 16px!important;}
+  .cat-sep{display:none!important;}
+  .category-hero h3{font-size:30px!important;}
+  .category-hero p{font-size:16px!important;line-height:1.55!important;}
+  .cat-number{font-size:clamp(40px,12vw,54px)!important;text-align:left!important;white-space:normal!important;padding-left:0!important;}
+  .cat-number small{font-size:12px!important;}
+  .mini-bars{padding:14px 16px 18px!important;}
+  .mini-row{grid-template-columns:minmax(0,1fr) auto!important;gap:6px 10px!important;}
+  .mini-track{grid-column:1/-1!important;grid-row:2!important;}
+  .mini-row span{font-size:14px!important;}
+  .mini-row b{font-size:16px!important;grid-column:2!important;grid-row:1!important;}
+
+  /* Stadium comparison */
+  .compare-controls{grid-template-columns:1fr!important;gap:10px!important;padding:14px!important;}
+  .compare-vs-control{justify-self:center!important;}
+  .compare-matchup{grid-template-columns:1fr!important;}
+  .compare-card,.compare-card.right{text-align:left!important;padding:16px!important;}
+  .compare-center{border-left:0!important;border-right:0!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important;padding:9px!important;flex-direction:row!important;gap:8px!important;}
+  .compare-vs-label{width:36px!important;height:36px!important;}
+  .compare-difference-label{margin:0!important;}
+  .compare-metric-row{grid-template-columns:minmax(72px,.8fr) minmax(0,1.35fr) minmax(72px,.8fr)!important;min-height:74px!important;}
+  .compare-side-value{padding:10px 7px!important;font-size:15px!important;word-break:normal!important;overflow-wrap:anywhere!important;}
+  .compare-row-difference{padding:9px 6px!important;}
+  .compare-row-difference>span{font-size:11px!important;}
+  .compare-row-difference b{font-size:16px!important;}
+  .compare-row-difference small{font-size:10px!important;}
+  .compare-metric-row.policy-row .compare-side-value{font-size:11px!important;line-height:1.3!important;}
+
+  /* Full 1-32 ranking: remove forced 820/1020px desktop canvas. */
+  .full-ranking-top{width:100%!important;}
+  .full-ranking-controls{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;padding:12px!important;}
+  .full-rank-toggle{display:grid!important;grid-template-columns:1fr 1fr!important;width:100%!important;gap:6px!important;}
+  .full-rank-toggle button{min-width:0!important;padding:10px 6px!important;font-size:11.5px!important;}
+  .full-ranking-top .cheap-average-summary{width:100%!important;margin:0!important;}
+  .full-ranking-panel{width:100%!important;max-width:100%!important;min-width:0!important;}
+  .full-ranking-panel .rank-shell{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important;}
+  .full-ranking-panel .rank-head{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:9px!important;padding:14px 12px!important;}
+  .full-ranking-panel .rank-head .avg-benchmark{white-space:normal!important;}
+  .full-ranking-panel .rank-scroll{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;overflow:visible!important;}
+  .full-ranking-panel .rank-list{width:100%!important;max-width:100%!important;min-width:0!important;}
+  .full-ranking-panel .rank-row{display:grid!important;grid-template-columns:32px minmax(0,1fr) auto 24px!important;gap:8px!important;width:100%!important;max-width:100%!important;min-width:0!important;padding:12px 10px!important;}
+  .full-ranking-panel .rank-row .bar{display:none!important;min-width:0!important;}
+  .full-ranking-panel .rank-no{font-size:18px!important;}
+  .full-ranking-panel .rank-stadium{font-size:17px!important;white-space:normal!important;overflow:visible!important;}
+  .full-ranking-panel .team small,.full-ranking-panel .rank-team-name{font-size:12px!important;white-space:normal!important;overflow:visible!important;}
+  .full-ranking-panel .cost{font-size:18px!important;align-self:center!important;}
+  .full-ranking-panel .detail{width:100%!important;max-width:100%!important;min-width:0!important;padding:10px!important;overflow:visible!important;}
+  .full-ranking-panel .detail-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;max-width:100%!important;min-width:0!important;gap:1px!important;}
+  .full-ranking-panel .detail-stat,.full-ranking-panel .detail-stat:nth-child(n+5){grid-column:span 1!important;min-width:0!important;padding:11px!important;}
+  .full-ranking-panel .detail-policy{grid-column:1/-1!important;}
+  .full-ranking-panel .detail-stat b{font-size:17px!important;white-space:normal!important;}
+  .full-ranking-panel .detail-stat span{font-size:10px!important;}
+
+  /* Methodology */
+  .method{padding:20px 16px!important;border-left-width:4px!important;}
+  .method h3{font-size:27px!important;}
+  .method p,.method li{font-size:16px!important;line-height:1.6!important;}
+  .method-package{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .method-package-item{min-height:86px!important;padding:12px 8px!important;}
+  .method-package-item b{font-size:21px!important;}
+  .method-package-item span{font-size:11px!important;}
+  .method-facts{grid-template-columns:1fr!important;}
+  .method-fact{min-height:0!important;}
+  .section .back-separator .back{max-width:100%!important;}
+}
+@media (max-width: 520px){
+  .research-strip{grid-template-columns:1fr!important;}
+  .research-stat{min-height:82px!important;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.16)!important;}
+  .research-stat:last-child{border-bottom:0!important;}
+  .research-stat b{font-size:32px!important;}
+  .nav-track{grid-template-columns:1fr!important;}
+  .category-tabs{grid-template-columns:1fr!important;}
+  .cheap-sort-controls,#exp-expanded-grid .exp-sort-controls{grid-template-columns:1fr!important;}
+  .cheap-custom-select{grid-column:1!important;}
+  .compare-metric-row{grid-template-columns:minmax(62px,.72fr) minmax(0,1.25fr) minmax(62px,.72fr)!important;}
+  .full-rank-toggle{grid-template-columns:1fr!important;}
+  .method-package{grid-template-columns:1fr!important;}
+}
+</style>
+
+
+<style id="mobile-responsive-fix-specificity">
+@media (max-width:900px){
+  .track-labels .track-label.avg{left:auto!important;right:auto!important;transform:none!important;}
+  #cheap-expanded-grid .cheap-expanded-row,#exp-expanded-grid .cheap-expanded-row{
+    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    width:auto!important;min-width:0!important;min-height:0!important;margin:10px 9px 0!important;
+    padding:0!important;border:1px solid rgba(0,224,154,.30)!important;border-left:4px solid #16f0ad!important;
+    background:rgba(2,35,27,.76)!important;opacity:1!important;transform:none!important;
+  }
+  #cheap-expanded-grid .cheap-expanded-row>div,#exp-expanded-grid .cheap-expanded-row>div{
+    display:flex!important;width:auto!important;min-width:0!important;min-height:68px!important;padding:10px 9px!important;
+    border-right:1px solid rgba(0,224,154,.18)!important;border-bottom:1px solid rgba(0,224,154,.18)!important;background:transparent!important;
+  }
+  #cheap-expanded-grid .cheap-expanded-row>div:nth-child(even),#exp-expanded-grid .cheap-expanded-row>div:nth-child(even){border-right:0!important;}
+  #cheap-expanded-grid .cheap-team-cell,#exp-expanded-grid .cheap-team-cell{
+    grid-column:1/-1!important;display:grid!important;grid-template-columns:36px minmax(0,1fr)!important;gap:9px!important;align-items:center!important;border-right:0!important;
+  }
+  #cheap-expanded-grid .cheap-total-cell,#exp-expanded-grid .cheap-total-cell{
+    grid-column:1/-1!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:9px!important;border-right:0!important;
+  }
+  #cheap-expanded-grid .cheap-metric-cell,#exp-expanded-grid .cheap-metric-cell{
+    width:auto!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;
+  }
+  #cheap-expanded-grid .cheap-policy-cell,#exp-expanded-grid .cheap-policy-cell{
+    grid-column:1/-1!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;border-right:0!important;border-bottom:0!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <main class="page">
@@ -1548,7 +1761,6 @@ body{margin:0!important;}
 </div>
 <div class="menu-anchor" id="menuAnchor" aria-hidden="true"></div>
 <div class="hero-board reveal" aria-label="NFL family cost summary">
-
 <div class="cost-track">
 <div class="track-head"><b class="track-gap-title">The $1,370.82 Stadium Cost Gap</b><span class="track-gap-side">All-In Family Cost</span></div>
 <div class="track"><i class="track-fill" data-width="100"></i><i class="track-marker" style="left:0%"></i><i class="track-marker avg" style="left:47.53%"></i><i class="track-marker" style="left:100%"></i></div>
@@ -1559,7 +1771,6 @@ body{margin:0!important;}
 </div>
 </header>
 <nav class="nav" id="main-menu" aria-label="Page sections"><div class="nav-scroll-shell"><div class="nav-scroll-top"><span class="nav-label">Sections</span><div class="nav-scroll-controls" aria-label="Scroll section menu"><button class="nav-scroll-arrow nav-scroll-prev" type="button" aria-label="Scroll sections left">‹</button><button class="nav-scroll-arrow nav-scroll-next" type="button" aria-label="Scroll sections right">›</button></div></div><div class="nav-track"><button type="button" data-target="findings">Key Findings</button><button type="button" data-target="cheapest">Cheapest</button><button type="button" data-target="categories">Category Leaders</button><button type="button" data-target="compare">Compare Stadiums</button><button type="button" data-target="full-ranking">Full Ranking</button><button type="button" data-target="methodology">Methodology</button></div></div></nav>
-
 <section class="section" id="findings"><div class="wrap">
 <div class="eyebrow">Key Findings</div><h2>The Biggest NFL Stadium Cost <em>Takeaways</em></h2>
 <p class="lede">Five quick takeaways from Action Network's 2026 ranking of NFL stadium costs for families.</p>
@@ -1572,7 +1783,6 @@ body{margin:0!important;}
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
 <section class="section alt" id="cheapest"><div class="wrap">
 <div class="eyebrow">The Affordable Half</div><h2><em>Cheapest</em> NFL Stadiums in 2026</h2>
 <p class="lede">Cleveland is the clear low-cost outlier, with Tennessee next at $993.45. The infographic below shows every part of the same family-of-four package for all 16 teams at a glance.</p>
@@ -1583,7 +1793,6 @@ body{margin:0!important;}
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
 <section class="section" id="expensive"><div class="wrap">
 <div class="eyebrow">The Premium Half</div><h2><em>Most Expensive</em> NFL Stadiums in 2026</h2>
 <p class="lede">Buffalo, Chicago, Philadelphia, Detroit, and Seattle all clear $2,000 for a family of four. The infographic below mirrors the cheapest view, but for the 16 costliest NFL stadiums for families.</p>
@@ -1594,7 +1803,6 @@ body{margin:0!important;}
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
 <section class="section alt" id="categories"><div class="wrap">
 <div class="eyebrow">Where Individual Costs Differ</div><h2>The NFL's <em>Category Leaders</em></h2>
 <p class="lede">Compare both ends of each stadium-cost category. Switch the measure and choose Most Expensive or Cheapest to see the five highest or five lowest prices across the NFL.</p>
@@ -1607,8 +1815,6 @@ body{margin:0!important;}
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
-
 <section class="section" id="compare"><div class="wrap">
 <div class="eyebrow">Head-to-Head</div><h2>Compare <em>NFL Stadium Costs</em></h2>
 <p class="lede">Choose any two team-linked NFL stadium entries to compare the same family-of-four package side by side. By default, the tool opens with the cheapest and most expensive stadium entries in the 2026 ranking.</p>
@@ -1623,7 +1829,6 @@ body{margin:0!important;}
 </div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
 <section class="section" id="full-ranking"><div class="wrap">
 <div class="eyebrow">Every Team Ranked</div><h2>Full <em>Ranking</em></h2>
 <p class="lede">Switch the order to see all 32 teams with the most expensive half first or the cheapest half first. The first 16 rows appear in the lead colour, with the remaining 16 continuing beneath in the opposite half.</p>
@@ -1634,7 +1839,6 @@ body{margin:0!important;}
 <div class="full-ranking-panel reveal" id="full-ranking-panel" aria-live="polite"></div>
 <div class="back-separator" aria-hidden="false"><button class="back" type="button" data-target="menuAnchor" aria-label="Back to main menu"><span class="back-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 19V5"/><path d="m6.5 10.5 5.5-5.5 5.5 5.5"/></svg></span><span class="back-label">Back to Main Menu</span></button></div>
 </div></section>
-
 <section class="section" id="methodology"><div class="wrap">
 <div class="eyebrow">How the Ranking Works</div><h2>Methodology and <em>Sources</em></h2>
 <div class="method reveal">
@@ -1648,7 +1852,6 @@ body{margin:0!important;}
   <div class="method-package-item"><b>1</b><span>Parking Spot</span></div>
   <div class="method-package-item supporting"><b>Supporting Data</b><span>Child Admission</span><small>Not included in ranking</small></div>
 </div>
-
 <div class="method-block">
   <h4>Ticket Pricing</h4>
   <div class="method-facts">
@@ -1660,7 +1863,6 @@ body{margin:0!important;}
   <p class="method-copy">Ticket prices used in the ranking were collected from Ticketmaster. StubHub and SeatGeek were used only as secondary comparison points to help confirm that the Ticketmaster sample was broadly representative of the wider ticket market.</p>
   <p class="method-copy">Ultra-premium and luxury packages, along with unusually low promotional listings, were removed to better reflect regular-season ticket prices a family could realistically encounter.</p>
 </div>
-
 <div class="method-block">
   <h4>Food and Drink</h4>
   <p class="method-copy">Since official 2026 concession prices were not available consistently across all teams, 2025 figures were used as the baseline and adjusted using U.S. Bureau of Labor Statistics CPI data to estimate 2026 costs.</p>
@@ -1675,7 +1877,6 @@ body{margin:0!important;}
   </ul>
   <p class="method-footnote">CPI adjustments were applied only to beer, soft drink and hot dog costs. 2026 ticket and parking prices were not inflation-adjusted.</p>
 </div>
-
 <div class="method-block">
   <h4>Parking</h4>
   <div class="method-facts">
@@ -1684,12 +1885,10 @@ body{margin:0!important;}
   </div>
   <p class="method-copy">Available parking listings were analysed for each regular-season home game. Atypical premium listings and extreme outliers were excluded before averaging across the home schedule to estimate a representative parking cost for each team.</p>
 </div>
-
 <div class="method-block">
   <h4>Ranking Notes</h4>
   <p class="method-copy">The cheapest ranking orders teams from the lowest total to the highest, while the most expensive ranking reverses that order. The Jets and Giants, and the Rams and Chargers, remain separate because their ticket costs differ even though each pair shares a stadium. Child admission policies are shown as supporting information and do not alter the package total.</p>
 </div>
-
 <p>You can view the complete dataset used for this analysis here: <a href="https://gauthambc.github.io/action-network-most-expensive-vs-cheapest-nfl-games-2026/rawdata.html" target="_blank" rel="nofollow noopener">NFL Stadium Costs for Families 2026 | Action Network</a>.</p>
 <p class="sources"><strong>Sources:</strong> Action Network data analysis; <a href="https://www.ticketmaster.com/" target="_blank" rel="nofollow noopener">Ticketmaster</a>; <a href="https://www.stubhub.com/" target="_blank" rel="nofollow noopener">StubHub</a> and <a href="https://seatgeek.com/" target="_blank" rel="nofollow noopener">SeatGeek</a> (comparison only); <a href="https://www.vividseats.com/" target="_blank" rel="nofollow noopener">Vivid Seats</a> (parking); <a href="https://www.fox5ny.com/news/beer-prices-every-nfl-stadium-heres-how-metlife-stadium-field-ranks" target="_blank" rel="nofollow noopener">Fox 5</a>; <a href="https://dose.ca/2025/09/11/here-are-the-price-rankings-for-hot-dogs-in-nfl-stadiums/" target="_blank" rel="nofollow noopener">Dose</a>; <a href="https://www.teammarketing.com/" target="_blank" rel="nofollow noopener">Team Marketing Report's Fan Cost Index</a>; and the <a href="https://www.bls.gov/cpi/" target="_blank" rel="nofollow noopener">U.S. Bureau of Labor Statistics (CPI data)</a>.</p>
 </div>
@@ -1803,9 +2002,7 @@ return `<div class="cheap-night-decor" aria-hidden="true">
 </filter>
 <filter id="ngdGrainF"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
 </defs></svg>
-
 <div class="ngd ngd-glow"></div>
-
 <div class="ngd ngd-beams"><svg viewBox="0 0 1200 760" preserveAspectRatio="none">
 <g filter="url(#ngdBlurBig)" fill="url(#ngdBeam)">
 <polygon points="-40,0 130,0 470,760 240,760"/>
@@ -1814,7 +2011,6 @@ return `<div class="cheap-night-decor" aria-hidden="true">
 <polygon points="1110,0 1000,0 560,760 700,760" opacity=".6"/>
 </g>
 </svg></div>
-
 <div class="ngd ngd-anchor ngd-ball"><svg viewBox="0 0 420 290">
 <g>
 <path d="M20 145C82 -10 338 -10 400 145 338 300 82 300 20 145Z" fill="url(#ngdLeather)"/>
@@ -1846,7 +2042,6 @@ return `<div class="cheap-night-decor" aria-hidden="true">
 <path d="M252 252C322 234 372 196 398 152" stroke="#7dffcf" stroke-width="5" fill="none" opacity=".38" filter="url(#ngdSoft)"/>
 </g>
 </svg></div>
-
 <div class="ngd ngd-anchor ngd-stadium"><svg viewBox="0 0 240 160">
 <ellipse cx="120" cy="96" rx="114" ry="54" fill="url(#ngdBowl)"/>
 <ellipse cx="120" cy="93" rx="88" ry="40" fill="#06392c" opacity=".55"/>
@@ -1869,7 +2064,6 @@ return `<div class="cheap-night-decor" aria-hidden="true">
 </g>
 </g>
 </svg></div>
-
 <div class="ngd ngd-anchor ngd-helmet"><svg viewBox="0 0 440 400">
 <defs>
 <clipPath id="ngdShellClip"><path d="M354 178C300 190 272 214 268 252L268 296C268 316 252 330 232 330L160 330C112 330 78 306 66 268C52 240 46 210 50 188C60 110 132 40 220 40C296 40 350 82 366 136C372 156 366 172 354 178Z"/></clipPath>
@@ -1971,12 +2165,10 @@ function closeCheapSelects(except){document.querySelectorAll('.cheap-custom-sele
 let expSortKey='total',expSortDir='desc';
 function sortedExpRows(){return expensive.slice().sort((a,b)=>{const av=Number(a[expSortKey]),bv=Number(b[expSortKey]);let d=av-bv;if(!d)d=a.team.localeCompare(b.team);return expSortDir==='asc'?d:-d;});}
 function renderExpExpanded(rows,immediate){const root=document.getElementById('exp-expanded-grid');if(!root)return;const logo='<svg class="logo" viewBox="0 0 228 34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Action Network"><circle cx="13" cy="17" r="11"></circle><path d="M8 17.3l3.4 3.4 6.8-7.4"></path><text x="30" y="22.4" textLength="192" lengthAdjust="spacingAndGlyphs">ACTION NETWORK</text></svg>';const metricOpts=[['total','Overall Cost'],['tickets','Tickets'],['beer','Beers'],['soda','Soft Drinks'],['food','Hot Dogs'],['parking','Parking']],dirOpts=[['asc','Low to High'],['desc','High to Low']];root.innerHTML=cheapNightDecor()+'<div class="cheap-infographic-brand">'+logo+'<span class="cheap-infographic-brand-note">2026 NFL Stadium Cost Study</span></div><div class="cheap-expanded-title"><strong>Most Expensive NFL Stadiums for Families in 2026</strong><span>Family-of-four stadium costs</span></div><div class="cheap-control-bar"><div class="exp-sort-controls"><span>Sort By</span>'+cheapSelect('Sort table by metric','exp-metric',metricOpts,expSortKey)+cheapSelect('Sort direction','exp-direction',dirOpts,expSortDir)+'</div><div class="cheap-average-summary"><span class="cheap-avg-label">NFL Average Stadium Cost</span><span class="cheap-avg-value">$1,474.55</span></div></div><div class="cheap-expanded-head"><div class="cheap-team-header"><div class="cheap-team-header-stack"><span>Stadium</span><span>Team</span></div></div>'+expandedHeadCell(ICONS.total||ICONS.tickets,'Overall Cost','total')+expandedHeadCell(ICONS.tickets,'Four Tickets','tickets')+expandedHeadCell(ICONS.beer,'Two Beers','beer')+expandedHeadCell(ICONS.soda,'Two Soft Drinks','soda')+expandedHeadCell(ICONS.food,'Four Hot Dogs','food')+expandedHeadCell(ICONS.parking,'Parking','parking')+'<div class="cheap-policy-header">'+ICONS.child+'<span>Child Policy</span></div></div>'+rows.map((r,i)=>'<div class="cheap-expanded-row'+(immediate?' cheap-row-in':'')+'" data-team="'+esc(r.team)+'"><div class="cheap-team-cell"><span class="cheap-expanded-rank">'+(i+1)+'</span><span class="cheap-expanded-team"><b class="cheap-team-name">'+esc(r.stadium)+'</b><small class="cheap-stadium-name">'+esc(r.team)+'</small></span></div><div class="cheap-total-cell"><span class="cheap-count" data-cheap-metric="'+r.total+'">'+(immediate?money(r.total):'$0.00')+'</span><small class="cheap-total-delta">'+avgInline(r.total)+'</small></div>'+metricCell(ICONS.tickets,r.tickets,immediate)+metricCell(ICONS.beer,r.beer,immediate)+metricCell(ICONS.soda,r.soda,immediate)+metricCell(ICONS.food,r.food,immediate)+metricCell(ICONS.parking,r.parking,immediate)+'<div class="cheap-policy-cell">'+ICONS.child+'<span>'+esc(r.policy)+'</span></div></div>').join('')+'<div class="cheap-infographic-footer"><span>Package: four tickets, two beers, two soft drinks, four hot dogs and one parking space. Child admission policy shown in the final column.</span></div>';}
-
 renderCheapExpanded(sortedCheapRows(),false);renderExpExpanded(sortedExpRows(),false);initStadiumComparison();renderFullRanking();
 document.addEventListener('click',e=>{const trigger=e.target.closest('.cheap-select-trigger');if(trigger){const wrap=trigger.closest('.cheap-custom-select'),willOpen=!wrap.classList.contains('open');closeCheapSelects(wrap);wrap.classList.toggle('open',willOpen);trigger.setAttribute('aria-expanded',String(willOpen));return;}const option=e.target.closest('.cheap-select-option');if(option){if(cheapSortAnimating)return;const wrap=option.closest('.cheap-custom-select'),type=wrap.dataset.cheapSelect,value=option.dataset.value;if(type==='metric'||type==='direction'){if(type==='metric')cheapSortKey=value;else cheapSortDir=value;updateCheapSelectUI(wrap,value);animateCheapSortFlow();postHeight();return;}if(type==='exp-metric'||type==='exp-direction'){if(type==='exp-metric')expSortKey=value;else expSortDir=value;updateCheapSelectUI(wrap,value);animateExpSortFlow();postHeight();return;}return;}if(!e.target.closest('.cheap-custom-select'))closeCheapSelects();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCheapSelects();});
 document.addEventListener('change',e=>{if(!e.target)return;if(e.target.id==='cheap-sort-metric'){cheapSortKey=e.target.value;renderCheapExpanded(sortedCheapRows(),true);postHeight();return;}if(e.target.id==='cheap-sort-direction'){cheapSortDir=e.target.value;renderCheapExpanded(sortedCheapRows(),true);postHeight();return;}if(e.target.id==='exp-sort-metric'){expSortKey=e.target.value;renderExpExpanded(sortedExpRows(),true);postHeight();return;}if(e.target.id==='exp-sort-direction'){expSortDir=e.target.value;renderExpExpanded(sortedExpRows(),true);postHeight();}});
-
 document.addEventListener('click',e=>{const row=e.target.closest('.rank-row');if(!row||!row.dataset.detail)return;const panel=document.getElementById(row.dataset.detail),open=row.getAttribute('aria-expanded')==='true';row.setAttribute('aria-expanded',String(!open));panel.classList.toggle('opened',!open);postHeight();});
 const cats={tickets:{label:'Four Tickets',unit:'four-ticket package'},beer:{label:'Two Beers',unit:'two-beer order'},food:{label:'Four Hot Dogs',unit:'four-hot-dog order'},parking:{label:'Parking',unit:'parking price'}};
 let categoryKey='tickets',categoryMode='desc';
@@ -1995,7 +2187,6 @@ document.querySelectorAll('[data-full-order]').forEach(btn=>btn.addEventListener
 const inFrame=(()=>{try{return window.parent!==window}catch(e){return true}})();let jumpSentinel=null;
 function jumpTo(el,pad){if(!el)return;const pageY=window.pageYOffset||document.documentElement.scrollTop||0,y=Math.max(0,el.getBoundingClientRect().top+pageY-(pad==null?6:pad));if(!jumpSentinel){jumpSentinel=document.createElement('div');jumpSentinel.setAttribute('aria-hidden','true');jumpSentinel.style.cssText='position:absolute;left:0;top:0;width:1px;height:1px;margin:0;padding:0;border:0;pointer-events:none;visibility:hidden;';document.body.appendChild(jumpSentinel)}jumpSentinel.style.top=y+'px';jumpSentinel.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});if(inFrame){try{window.parent.postMessage({an_jump:y,anEmbed:'nfl-family-costs-2026'},'*')}catch(e){}}}
 document.querySelectorAll('[data-target]').forEach(btn=>btn.addEventListener('click',()=>{const target=document.getElementById(btn.dataset.target);const pad=btn.classList.contains('back')?6:Math.ceil((document.getElementById('main-menu')?.getBoundingClientRect().height||0)+10);jumpTo(target,pad)}));
-
 const sectionNavTrack=document.querySelector('#main-menu .nav-track'),sectionNavControls=document.querySelector('#main-menu .nav-scroll-controls'),sectionNavPrev=document.querySelector('#main-menu .nav-scroll-prev'),sectionNavNext=document.querySelector('#main-menu .nav-scroll-next');
 function updateSectionNavArrows(){
 if(!sectionNavTrack||!sectionNavControls||!sectionNavPrev||!sectionNavNext)return;
@@ -2017,10 +2208,8 @@ sectionNavTrack.addEventListener('scroll',updateSectionNavArrows,{passive:true})
 window.addEventListener('resize',updateSectionNavArrows,{passive:true});
 requestAnimationFrame(updateSectionNavArrows);
 }
-
 function showBars(root){root.querySelectorAll('[data-width]').forEach(el=>el.style.width=el.dataset.width+'%');}
-
-if(!reduced&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');showBars(e.target);if(e.target.id==='cheap-rank-shell'||e.target.id==='exp-rank-shell'){e.target.querySelectorAll('.cheap-expanded-row').forEach((row,i)=>setTimeout(()=>row.classList.add('cheap-row-in'),Math.min(i*38,520)));animateMoney(e.target.querySelectorAll('[data-cheap-metric]'));}io.unobserve(e.target);}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('visible');showBars(el);if(el.id==='cheap-rank-shell'||el.id==='exp-rank-shell'){el.querySelectorAll('.cheap-expanded-row').forEach(row=>row.classList.add('cheap-row-in'));animateMoney(el.querySelectorAll('[data-cheap-metric]'));}});}
+if(!reduced&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');showBars(e.target);if(e.target.id==='cheap-rank-shell'||e.target.id==='exp-rank-shell'){e.target.querySelectorAll('.cheap-expanded-row').forEach((row,i)=>setTimeout(()=>row.classList.add('cheap-row-in'),Math.min(i*38,520)));animateMoney(e.target.querySelectorAll('[data-cheap-metric]'));}io.unobserve(e.target);}}),{threshold:.01});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('visible');showBars(el);if(el.id==='cheap-rank-shell'||el.id==='exp-rank-shell'){el.querySelectorAll('.cheap-expanded-row').forEach(row=>row.classList.add('cheap-row-in'));animateMoney(el.querySelectorAll('[data-cheap-metric]'));}});}
 const secs=[...document.querySelectorAll('section[id]')],navBtns=[...document.querySelectorAll('.nav button[data-target]')];if('IntersectionObserver' in window){const nio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){navBtns.forEach(b=>b.classList.toggle('active',b.dataset.target===e.target.id));const active=navBtns.find(b=>b.dataset.target===e.target.id);if(active){const t=active.parentElement;t.scrollLeft=Math.max(0,active.offsetLeft-t.clientWidth/2+active.clientWidth/2);updateSectionNavArrows();}}}),{rootMargin:'-20% 0px -65% 0px'});secs.forEach(s=>nio.observe(s));}
 const tip=document.getElementById('tip');function openTip(el){tip.textContent=el.dataset.tip;tip.classList.add('show');const r=el.getBoundingClientRect(),tr=tip.getBoundingClientRect();let left=Math.max(8,Math.min(innerWidth-tr.width-8,r.left+r.width/2-tr.width/2)),top=r.top-tr.height-8;if(top<8)top=Math.min(innerHeight-tr.height-8,r.bottom+8);tip.style.left=left+'px';tip.style.top=top+'px';}document.addEventListener('mouseover',e=>{const el=e.target.closest('[data-tip]');if(el)openTip(el);});document.addEventListener('mouseout',e=>{if(e.target.closest('[data-tip]'))tip.classList.remove('show');});document.addEventListener('focusin',e=>{const el=e.target.closest('[data-tip]');if(el)openTip(el);});document.addEventListener('focusout',()=>tip.classList.remove('show'));
 function wrapText(ctx,text,x,y,maxWidth,lineHeight,maxLines){const words=text.split(' ');let line='',lines=[];words.forEach(word=>{const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word;}else line=test;});if(line)lines.push(line);lines.slice(0,maxLines||99).forEach((l,i)=>ctx.fillText(l,x,y+i*lineHeight));return Math.min(lines.length,maxLines||99)*lineHeight;}
@@ -2064,12 +2253,10 @@ const aSelect=document.getElementById('compare-a'),bSelect=document.getElementBy
 if(!aSelect||!bSelect)throw new Error('Comparison selections are unavailable');
 const a=DATA.find(r=>r.team===aSelect.value),b=DATA.find(r=>r.team===bSelect.value);
 if(!a||!b)throw new Error('Comparison stadium data is unavailable');
-
 const canvas=document.createElement('canvas');canvas.width=2400;canvas.height=1780;const x=canvas.getContext('2d');
 const navy='#101820',green='#00b67a',bright='#00e09a',muted='#60717c',soft='#f3faf7',line='#d6dfdc',white='#ffffff';
 const metrics=[['Overall Cost','total'],['Four Tickets','tickets'],['Two Beers','beer'],['Two Soft Drinks','soda'],['Four Hot Dogs','food'],['Parking','parking']];
 const gap=Math.abs(a.total-b.total);
-
 function fit(text,maxWidth,startSize,minSize,weight,color,align){
 let size=startSize;
 x.textAlign=align||'left';x.fillStyle=color||navy;
@@ -2090,7 +2277,6 @@ function higherText(key){
 const av=a[key],bv=b[key],d=Math.abs(av-bv);if(d<.005)return ['Same price','$0.00'];
 return [(av>bv?a:b).stadium+' higher',money(d)];
 }
-
 x.fillStyle='#f3f6f5';x.fillRect(0,0,2400,1780);
 x.fillStyle=navy;x.fillRect(0,0,2400,300);drawFootballBackdrop(x,2400,300,'#9fffd9');
 x.strokeStyle=bright;x.lineWidth=8;x.beginPath();x.arc(95,78,28,0,Math.PI*2);x.stroke();x.beginPath();x.moveTo(81,78);x.lineTo(92,89);x.lineTo(116,64);x.stroke();
@@ -2098,12 +2284,10 @@ x.fillStyle=bright;x.font='900 44px "Barlow Condensed",Arial';x.fillText('ACTION
 x.fillStyle='rgba(255,255,255,.64)';x.font='700 24px "Barlow Condensed",Arial';x.fillText('2026 NFL Stadium Cost Study',72,148);
 x.fillStyle=white;x.font='900 78px "Barlow Condensed",Arial';x.fillText('NFL STADIUM COST COMPARISON',72,238);
 x.fillStyle=bright;x.fillRect(72,264,470,6);
-
 sideHeader(a,true,350);sideHeader(b,false,350);
 x.fillStyle=bright;x.fillRect(1110,392,180,86);x.fillStyle=navy;x.font='900 42px "Barlow Condensed",Arial';x.textAlign='center';x.fillText('VS',1200,448);
 x.fillStyle=navy;x.font='800 30px "Barlow Condensed",Arial';x.fillText('OVERALL COST DIFFERENCE',1200,526);
 x.fillStyle=green;x.font='900 58px "Barlow Condensed",Arial';x.fillText(money(gap),1200,584);x.textAlign='left';
-
 const leftX=70,centerX=820,rightX=1580,leftW=750,centerW=760,rightW=750,rowTop=650,rowH=142;
 metrics.forEach(([label,key],i)=>{
 const y=rowTop+i*rowH,isTotal=i===0,bg=isTotal?soft:(i%2?'#ffffff':'#f8faf9');
@@ -2116,18 +2300,14 @@ const [note,diff]=higherText(key);x.textAlign='center';x.fillStyle=muted;x.font=
 x.fillStyle=green;x.font=(isTotal?'900 43px':'900 36px')+' "Barlow Condensed",Arial';x.fillText(diff,centerX+centerW/2,y+82);
 x.fillStyle=muted;x.font='600 19px "Barlow Condensed",Arial';x.fillText(note,centerX+centerW/2,y+113);x.textAlign='left';
 });
-
 const py=rowTop+metrics.length*rowH;
 x.fillStyle='#ffffff';x.fillRect(leftX,py,leftW+centerW+rightW,155);x.strokeStyle=line;x.lineWidth=2;x.beginPath();x.moveTo(leftX,py);x.lineTo(2330,py);x.stroke();x.beginPath();x.moveTo(centerX,py);x.lineTo(centerX,py+155);x.moveTo(rightX,py);x.lineTo(rightX,py+155);x.stroke();
 x.fillStyle=navy;x.font='500 26px "Source Serif 4",Georgia';x.textAlign='left';wrapText(x,a.policy,leftX+32,py+58,leftW-64,34,2);
 x.textAlign='right';wrapText(x,b.policy,rightX+rightW-32,py+58,rightW-64,34,2);
 x.textAlign='center';x.fillStyle=muted;x.font='700 25px "Barlow Condensed",Arial';x.fillText('CHILD ADMISSION',centerX+centerW/2,py+44);x.fillStyle=green;x.font='900 32px "Barlow Condensed",Arial';x.fillText(a.policy===b.policy?'SAME POLICY':'DIFFERENT',centerX+centerW/2,py+92);x.textAlign='left';
-
 x.fillStyle=navy;x.fillRect(0,1655,2400,125);x.fillStyle=white;x.font='500 22px "Source Serif 4",Georgia';x.fillText('Package: four tickets, two beers, two soft drinks, four hot dogs and one parking space.',72,1708);x.fillStyle=bright;x.font='700 22px "Barlow Condensed",Arial';x.fillText('Source: Action Network analysis · 2026',72,1748);
 return await new Promise(res=>canvas.toBlob(res,'image/png'));
 }
-
-
 async function downloadGraphic(e){
 e.preventDefault();
 const btn=e.currentTarget,old=btn.innerHTML;
@@ -2154,19 +2334,16 @@ document.querySelectorAll('[data-download="comparison"]').forEach(btn=>btn.addEv
 addEventListener('load',()=>{postHeight();setTimeout(postHeight,500);});if(document.fonts)document.fonts.ready.then(postHeight);if('ResizeObserver' in window)new ResizeObserver(()=>{clearTimeout(window.__heightTimer);window.__heightTimer=setTimeout(postHeight,120);}).observe(document.body);
 })();
 </script>
-
 <script id="wcag22-aa-semantic-fixes">
 (function(){
 'use strict';
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
-
 function hexRgb(hex){hex=(hex||'').trim().replace('#','');if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');if(!/^[0-9a-f]{6}$/i.test(hex))return null;return [0,2,4].map(i=>parseInt(hex.slice(i,i+2),16));}
 function rgbHex(rgb){return '#'+rgb.map(v=>Math.max(0,Math.min(255,Math.round(v))).toString(16).padStart(2,'0')).join('');}
 function mix(a,b,t){const A=hexRgb(a),B=hexRgb(b);if(!A||!B)return a;return rgbHex(A.map((v,i)=>v+(B[i]-v)*t));}
 function luminance(hex){const rgb=hexRgb(hex);if(!rgb)return 0;const x=rgb.map(v=>{const c=v/255;return c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4)});return .2126*x[0]+.7152*x[1]+.0722*x[2];}
 function contrast(a,b){const A=luminance(a),B=luminance(b);return (Math.max(A,B)+.05)/(Math.min(A,B)+.05);}
 function accessibleHeat(heat){let out=heat;for(let i=0;i<=20 && contrast(out,'#ffffff')<4.5;i++)out=mix(heat,'#101820',(i+1)/20);return out;}
-
 function enhanceHeat(){
 $$('.full-ranking-panel .rank-row').forEach(row=>{
 const heat=(row.style.getPropertyValue('--heat-color')||'#00865b').trim();
@@ -2176,7 +2353,6 @@ row.style.setProperty('--heat-text',text);
 const fill=$('.bar i',row);if(fill){fill.style.removeProperty('outline');fill.style.removeProperty('outline-color');fill.style.removeProperty('outline-style');fill.style.removeProperty('outline-width');fill.style.removeProperty('outline-offset');}
 });
 }
-
 function makeDataTable(rootId,label){
 const root=document.getElementById(rootId); if(!root)return;
 let shell=$('.a11y-data-table-scroll',root);
@@ -2195,7 +2371,6 @@ Array.from(newHead.children).forEach((cell,i)=>{cell.setAttribute('role','column
 newRows.forEach((row,ri)=>{row.setAttribute('role','row');row.setAttribute('aria-rowindex',String(ri+2));Array.from(row.children).forEach((cell,ci)=>{cell.setAttribute('role',ci===0?'rowheader':'cell');cell.setAttribute('aria-colindex',String(ci+1));});});
 const needsScroll=shell.scrollWidth>shell.clientWidth+1;shell.tabIndex=needsScroll?0:-1;
 }
-
 function enhanceRankDetails(){
 const scroll=$('.rank-scroll');if(scroll){scroll.removeAttribute('tabindex');scroll.removeAttribute('aria-label');}
 $$('.full-ranking-panel .rank-row[aria-controls]').forEach((btn,i)=>{
@@ -2203,7 +2378,6 @@ if(!btn.id)btn.id='full-rank-row-'+(i+1);
 const detail=document.getElementById(btn.getAttribute('aria-controls'));if(detail){detail.setAttribute('role','region');const team=$('.team',btn)?.childNodes?.[0]?.textContent?.trim()||'team';detail.setAttribute('aria-label','Cost breakdown for '+team);}
 });
 }
-
 function setupTabs(tablistSel,panelId,prefix){
 const list=$(tablistSel),panel=document.getElementById(panelId);if(!list||!panel)return;
 const tabs=$$('[role="tab"]',list); if(!tabs.length)return;
@@ -2214,14 +2388,12 @@ list.addEventListener('click',()=>requestAnimationFrame(sync));
 list.addEventListener('keydown',e=>{const current=tabs.indexOf(document.activeElement);if(current<0)return;let next=current;if(e.key==='ArrowRight'||e.key==='ArrowDown')next=(current+1)%tabs.length;else if(e.key==='ArrowLeft'||e.key==='ArrowUp')next=(current-1+tabs.length)%tabs.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=tabs.length-1;else return;e.preventDefault();tabs[next].focus();tabs[next].click();});
 sync();
 }
-
 function tooltipRelations(){
 const tip=document.getElementById('tip');if(!tip)return;
 $$('[data-tip]').forEach((el,i)=>{if(!el.id)el.id='tip-trigger-'+(i+1);});
 document.addEventListener('focusin',e=>{const el=e.target.closest?.('[data-tip]');if(el)el.setAttribute('aria-describedby','tip')});
 document.addEventListener('focusout',e=>{const el=e.target.closest?.('[data-tip]');if(el)el.removeAttribute('aria-describedby')});
 }
-
 function liveStatus(){
 let status=document.getElementById('a11y-status');if(!status){status=document.createElement('div');status.id='a11y-status';status.className='sr-only';status.setAttribute('role','status');status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');document.body.appendChild(status);}
 const cat=document.getElementById('category-panel');if(cat)cat.removeAttribute('aria-live');
@@ -2229,17 +2401,14 @@ const full=document.getElementById('full-ranking-panel');if(full)full.removeAttr
 $$('.category-tabs [role="tab"]').forEach(b=>b.addEventListener('click',()=>{status.textContent='Category view changed to '+b.textContent.trim()+'.'}));
 $$('.full-rank-toggle [role="tab"]').forEach(b=>b.addEventListener('click',()=>{status.textContent='Full ranking order changed to '+b.textContent.trim()+'.'}));
 }
-
 function scrollAssistTarget(control){try{return document.querySelector(control.dataset.scrollAssist||'')}catch(e){return null}}
 function updateScrollAssist(control){const target=scrollAssistTarget(control);if(!target){control.hidden=true;return}const max=Math.max(0,target.scrollWidth-target.clientWidth);control.hidden=max<3;const left=$('[data-scroll-dir="-1"]',control),right=$('[data-scroll-dir="1"]',control);if(left)left.disabled=target.scrollLeft<=2;if(right)right.disabled=target.scrollLeft>=max-2;if(!target.dataset.scrollAssistBound){target.dataset.scrollAssistBound='true';target.addEventListener('scroll',()=>updateScrollAssist(control),{passive:true})}}
 function setupScrollAssists(){const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;$$('.table-scroll-assist').forEach(control=>{if(!control.dataset.scrollAssistReady){control.dataset.scrollAssistReady='true';control.addEventListener('click',e=>{const btn=e.target.closest?.('[data-scroll-dir]');if(!btn)return;const target=scrollAssistTarget(control);if(!target)return;const dir=Number(btn.dataset.scrollDir)||1,step=Math.max(280,Math.round(target.clientWidth*.72));target.scrollBy({left:dir*step,behavior:reduced?'auto':'smooth'})})}updateScrollAssist(control)})}
-
 function enhance(){
 makeDataTable('cheap-expanded-grid','Cheapest NFL stadiums for families');
 makeDataTable('exp-expanded-grid','Most expensive NFL stadiums for families');
 enhanceHeat();enhanceRankDetails();setupScrollAssists();
 }
-
 function init(){
 const nav=$('.nav');if(nav&&!nav.getAttribute('aria-label'))nav.setAttribute('aria-label','Page sections');
 setupTabs('.category-tabs','category-panel','category-tab');
@@ -2253,7 +2422,6 @@ window.addEventListener('resize',enhance,{passive:true});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>requestAnimationFrame(init),{once:true});else requestAnimationFrame(init);
 })();
 </script>
-
 <script id="wcag22-aa-custom-select-keyboard-final">
 (function(){
 'use strict';
@@ -2324,6 +2492,5 @@ document.querySelectorAll('.cheap-night-decor').forEach(fixDecor);
 new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType!==1)return;if(n.matches?.('.cheap-night-decor'))fixDecor(n);n.querySelectorAll?.('.cheap-night-decor').forEach(fixDecor)}))).observe(document.body,{childList:true,subtree:true});
 })();
 </script>
-
 </body>
 </html>
