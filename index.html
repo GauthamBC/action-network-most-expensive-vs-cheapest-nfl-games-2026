@@ -1744,6 +1744,439 @@ body{margin:0!important;}
 }
 </style>
 
+
+<style id="mobile-card-balance-fix">
+@media (max-width:900px){
+  #cheap-expanded-grid .cheap-expanded-row,
+  #exp-expanded-grid .cheap-expanded-row{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    align-items:stretch!important;
+  }
+
+  #cheap-expanded-grid .cheap-team-cell,
+  #exp-expanded-grid .cheap-team-cell{
+    grid-column:1/-1!important;
+    min-height:72px!important;
+    padding:14px 14px!important;
+    border-right:0!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell,
+  #exp-expanded-grid .cheap-total-cell{
+    grid-column:1/-1!important;
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:14px!important;
+    min-height:84px!important;
+    padding:18px 20px!important;
+    border-right:0!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell::after,
+  #exp-expanded-grid .cheap-total-cell::after{
+    inset:10px 18px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell:before,
+  #exp-expanded-grid .cheap-total-cell:before{
+    position:relative!important;
+    z-index:1!important;
+    margin-right:12px!important;
+    flex:1 1 auto!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-count,
+  #exp-expanded-grid .cheap-total-cell .cheap-count{
+    position:relative!important;
+    z-index:1!important;
+    margin-left:auto!important;
+    padding-right:2px!important;
+    font-size:20px!important;
+    text-align:right!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-total-delta,
+  #exp-expanded-grid .cheap-total-cell .cheap-total-delta{
+    display:none!important;
+  }
+
+  #cheap-expanded-grid .cheap-metric-cell,
+  #exp-expanded-grid .cheap-metric-cell,
+  #cheap-expanded-grid .cheap-policy-cell,
+  #exp-expanded-grid .cheap-policy-cell{
+    grid-column:auto!important;
+    min-height:90px!important;
+    padding:14px 12px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    gap:6px!important;
+    text-align:left!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell,
+  #exp-expanded-grid .cheap-policy-cell{
+    border-bottom:0!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell:before,
+  #exp-expanded-grid .cheap-policy-cell:before{
+    content:"Child Policy"!important;
+    font-family:var(--display)!important;
+    font-size:10px!important;
+    font-weight:700!important;
+    letter-spacing:.05em!important;
+    color:rgba(255,255,255,.70)!important;
+    margin:0 0 4px 0!important;
+    text-transform:uppercase!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell svg,
+  #exp-expanded-grid .cheap-policy-cell svg{
+    display:none!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell span,
+  #exp-expanded-grid .cheap-policy-cell span{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    font-size:16px!important;
+    line-height:1.25!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+    color:#fff!important;
+  }
+
+  #cheap-expanded-grid .cheap-metric-cell b,
+  #exp-expanded-grid .cheap-metric-cell b{
+    font-size:18px!important;
+    line-height:1.1!important;
+  }
+}
+
+@media (max-width:520px){
+  #cheap-expanded-grid .cheap-total-cell,
+  #exp-expanded-grid .cheap-total-cell{
+    min-height:78px!important;
+    padding:16px 18px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell::after,
+  #exp-expanded-grid .cheap-total-cell::after{
+    inset:10px 16px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell:before,
+  #exp-expanded-grid .cheap-total-cell:before{
+    font-size:10px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-count,
+  #exp-expanded-grid .cheap-total-cell .cheap-count{
+    font-size:18px!important;
+  }
+
+  #cheap-expanded-grid .cheap-metric-cell,
+  #exp-expanded-grid .cheap-metric-cell,
+  #cheap-expanded-grid .cheap-policy-cell,
+  #exp-expanded-grid .cheap-policy-cell{
+    min-height:84px!important;
+    padding:13px 11px!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell span,
+  #exp-expanded-grid .cheap-policy-cell span{
+    font-size:14px!important;
+  }
+}
+</style>
+
+
+<style id="mobile-overall-cost-cleanup-v3">
+@media (max-width:900px){
+  #cheap-expanded-grid .cheap-total-cell,
+  #exp-expanded-grid .cheap-total-cell{
+    grid-column:1/-1!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    column-gap:16px!important;
+    min-width:0!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:72px!important;
+    padding:16px 18px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    border:0!important;
+    border-top:1px solid rgba(0,224,154,.20)!important;
+    border-bottom:1px solid rgba(0,224,154,.20)!important;
+    background:rgba(0,224,154,.055)!important;
+    overflow:hidden!important;
+  }
+
+  /* Remove the old inset neon rectangle completely on mobile. */
+  #cheap-expanded-grid .cheap-total-cell::after,
+  #exp-expanded-grid .cheap-total-cell::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell:before,
+  #exp-expanded-grid .cheap-total-cell:before{
+    content:"Overall Cost"!important;
+    position:static!important;
+    display:block!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+    font-family:var(--display)!important;
+    font-size:11px!important;
+    font-weight:700!important;
+    line-height:1.1!important;
+    letter-spacing:.04em!important;
+    text-transform:none!important;
+    color:#16f0ad!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-count,
+  #exp-expanded-grid .cheap-total-cell .cheap-count{
+    position:static!important;
+    display:block!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+    justify-self:end!important;
+    max-width:100%!important;
+    font-size:clamp(18px,5vw,23px)!important;
+    font-weight:800!important;
+    line-height:1!important;
+    text-align:right!important;
+    white-space:nowrap!important;
+    color:#fff!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-total-delta,
+  #exp-expanded-grid .cheap-total-cell .cheap-total-delta{
+    display:none!important;
+  }
+}
+
+@media (max-width:420px){
+  #cheap-expanded-grid .cheap-total-cell,
+  #exp-expanded-grid .cheap-total-cell{
+    column-gap:10px!important;
+    padding:14px 14px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell:before,
+  #exp-expanded-grid .cheap-total-cell:before{
+    font-size:10px!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-count,
+  #exp-expanded-grid .cheap-total-cell .cheap-count{
+    font-size:clamp(17px,5.2vw,21px)!important;
+  }
+}
+</style>
+
+
+<style id="mobile-centered-metric-cards-v4">
+@media (max-width:900px){
+  /* Keep rank, stadium and team details left aligned. */
+  #cheap-expanded-grid .cheap-team-cell,
+  #exp-expanded-grid .cheap-team-cell{
+    text-align:left!important;
+    justify-items:start!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team,
+  #exp-expanded-grid .cheap-expanded-team{
+    align-items:flex-start!important;
+    text-align:left!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-rank,
+  #exp-expanded-grid .cheap-expanded-rank{
+    text-align:left!important;
+  }
+
+  /* Center Overall Cost in two balanced halves. */
+  #cheap-expanded-grid .cheap-total-cell,
+  #exp-expanded-grid .cheap-total-cell{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    column-gap:0!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell:before,
+  #exp-expanded-grid .cheap-total-cell:before{
+    width:100%!important;
+    justify-self:center!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-total-cell .cheap-count,
+  #exp-expanded-grid .cheap-total-cell .cheap-count{
+    width:100%!important;
+    justify-self:center!important;
+    text-align:center!important;
+  }
+
+  /* Center every metric box. */
+  #cheap-expanded-grid .cheap-metric-cell,
+  #exp-expanded-grid .cheap-metric-cell{
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-metric-cell:before,
+  #exp-expanded-grid .cheap-metric-cell:before{
+    width:100%!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-metric-cell b,
+  #exp-expanded-grid .cheap-metric-cell b{
+    width:100%!important;
+    text-align:center!important;
+  }
+
+  /* Child Policy behaves like the other metric cards. */
+  #cheap-expanded-grid .cheap-policy-cell,
+  #exp-expanded-grid .cheap-policy-cell{
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell:before,
+  #exp-expanded-grid .cheap-policy-cell:before{
+    width:100%!important;
+    margin:0 0 4px 0!important;
+    text-align:center!important;
+  }
+
+  #cheap-expanded-grid .cheap-policy-cell span,
+  #exp-expanded-grid .cheap-policy-cell span{
+    width:100%!important;
+    text-align:center!important;
+  }
+}
+</style>
+
+
+<style id="mobile-inline-stadium-team-v5">
+@media (max-width:900px){
+  /* Mobile only: keep rank on the left, then stadium + team on one natural line. */
+  #cheap-expanded-grid .cheap-team-cell,
+  #exp-expanded-grid .cheap-team-cell{
+    grid-template-columns:36px minmax(0,1fr)!important;
+    align-items:center!important;
+    text-align:left!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team,
+  #exp-expanded-grid .cheap-expanded-team{
+    display:block!important;
+    min-width:0!important;
+    text-align:left!important;
+    line-height:1.18!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team b,
+  #exp-expanded-grid .cheap-expanded-team b{
+    display:inline!important;
+    margin:0!important;
+    font-family:var(--display)!important;
+    font-size:20px!important;
+    font-weight:700!important;
+    line-height:1.18!important;
+    letter-spacing:.005em!important;
+    color:#fff!important;
+    white-space:normal!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team small,
+  #exp-expanded-grid .cheap-expanded-team small{
+    display:inline!important;
+    margin:0!important;
+    font-family:var(--display)!important;
+    font-size:14px!important;
+    font-weight:500!important;
+    line-height:1.18!important;
+    letter-spacing:.01em!important;
+    color:rgba(255,255,255,.76)!important;
+    white-space:normal!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team small::before,
+  #exp-expanded-grid .cheap-expanded-team small::before{
+    content:" · ";
+    color:#16f0ad;
+    font-weight:800;
+  }
+}
+
+@media (max-width:520px){
+  #cheap-expanded-grid .cheap-expanded-team b,
+  #exp-expanded-grid .cheap-expanded-team b{
+    font-size:18px!important;
+  }
+
+  #cheap-expanded-grid .cheap-expanded-team small,
+  #exp-expanded-grid .cheap-expanded-team small{
+    font-size:13px!important;
+  }
+}
+</style>
+
+
+<style id="mobile-family-cost-left-align">
+@media (max-width:900px){
+  .cost-track .track-head,
+  .cost-track .track-head .track-gap-title,
+  .cost-track .track-head .track-gap-side{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    justify-self:start!important;
+    text-align:left!important;
+  }
+
+  .cost-track .track-labels{
+    text-align:left!important;
+  }
+
+  .cost-track .track-label,
+  .cost-track .track-label.avg,
+  .cost-track .track-label.edge-left,
+  .cost-track .track-label.edge-right{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    text-align:left!important;
+  }
+
+  .cost-track .track-label b,
+  .cost-track .track-label strong,
+  .cost-track .track-label span{
+    width:100%!important;
+    text-align:left!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <main class="page">
