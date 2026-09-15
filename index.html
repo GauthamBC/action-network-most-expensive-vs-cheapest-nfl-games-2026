@@ -1533,7 +1533,7 @@ body{margin:0!important;}
 
 <style id="mobile-responsive-fix">
 /* Mobile/tablet responsive repair. Desktop styles above remain unchanged. */
-@media (max-width: 900px){
+@media (max-width: 600px){
   html,body{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:hidden!important;}
   body{font-size:17px!important;}
   .page{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:hidden!important;}
@@ -1716,7 +1716,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-responsive-fix-specificity">
-@media (max-width:900px){
+@media (max-width:600px){
   .track-labels .track-label.avg{left:auto!important;right:auto!important;transform:none!important;}
   #cheap-expanded-grid .cheap-expanded-row,#exp-expanded-grid .cheap-expanded-row{
     display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
@@ -1746,7 +1746,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-card-balance-fix">
-@media (max-width:900px){
+@media (max-width:600px){
   #cheap-expanded-grid .cheap-expanded-row,
   #exp-expanded-grid .cheap-expanded-row{
     grid-template-columns:repeat(2,minmax(0,1fr))!important;
@@ -1897,7 +1897,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-overall-cost-cleanup-v3">
-@media (max-width:900px){
+@media (max-width:600px){
   #cheap-expanded-grid .cheap-total-cell,
   #exp-expanded-grid .cheap-total-cell{
     grid-column:1/-1!important;
@@ -1989,7 +1989,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-centered-metric-cards-v4">
-@media (max-width:900px){
+@media (max-width:600px){
   /* Keep rank, stadium and team details left aligned. */
   #cheap-expanded-grid .cheap-team-cell,
   #exp-expanded-grid .cheap-team-cell{
@@ -2075,7 +2075,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-inline-stadium-team-v5">
-@media (max-width:900px){
+@media (max-width:600px){
   /* Mobile only: keep rank on the left, then stadium + team on one natural line. */
   #cheap-expanded-grid .cheap-team-cell,
   #exp-expanded-grid .cheap-team-cell{
@@ -2145,7 +2145,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-family-cost-left-align">
-@media (max-width:900px){
+@media (max-width:600px){
   .cost-track .track-head,
   .cost-track .track-head .track-gap-title,
   .cost-track .track-head .track-gap-side{
@@ -2179,7 +2179,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-left-align-stats-sections">
-@media (max-width:900px){
+@media (max-width:600px){
   /* Study scope: keep the mobile layout, but align all content to the left. */
   .research-stat{
     align-items:flex-start!important;
@@ -2213,7 +2213,7 @@ body{margin:0!important;}
 
 
 <style id="mobile-center-hero-stats-sections">
-@media (max-width:900px){
+@media (max-width:600px){
   /* Hero family-cost summary: center the heading and all three cost cards. */
   .cost-track .track-head{
     display:flex!important;
@@ -2317,6 +2317,14 @@ body{margin:0!important;}
 }
 </style>
 
+
+<style id="an-cms-desktop-guard">
+/*
+  Action Network CMS can render this asset inside a narrow desktop content column.
+  Mobile card overrides above intentionally begin at 600px, so desktop/tablet embeds
+  keep the original wide ranking/table presentation even when the CMS column is <900px.
+*/
+</style>
 </head>
 <body>
 <main class="page">
